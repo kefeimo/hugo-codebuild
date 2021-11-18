@@ -1,0 +1,10 @@
+baseURL = 'http://hugo-codebuild-c1-w5.s3-website.us-east-2.amazonaws.com'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "ananke"
+
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "awsbucket"
+URL = "s3://hugo-codebuild-c1-w5/?region=us-east-2" #your bucket here
